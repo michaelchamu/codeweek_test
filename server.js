@@ -19,5 +19,5 @@ var server = http.createServer(app).listen(port, host, function() {
 
 // At the root of your website, we show the index.html page
 app.get('/', function(req, res) {
-  res.sendfile('./public/index.html')
+  res.send("Server up and running");
 });
