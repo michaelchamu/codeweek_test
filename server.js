@@ -8,8 +8,8 @@ var app = express();
 
 /* This will allow Cozy to run your app smoothly but
  it won't break other execution environment */
-var port = process.env.PORT || 9250;
-var host = process.env.HOST || "127.0.0.1";
+var port = process.env.OPENSHIFT_NODEJS_PORT//process.env.PORT || 9250;
+var host = process.env.OPENSHIFT_NODEJS_IP //|| "127.0.0.1";
 
 // Starts the server itself
 var server = http.createServer(app).listen(port, host, function() {
