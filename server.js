@@ -19,5 +19,5 @@ var server = http.createServer(app).listen(port, host, function() {
 
 // At the root of your website, we show the index.html page
 app.get('/', function(req, res) {
-  res.send("Server up and running");
+  res.send("Dear Kuku.\nHellooooooo, do you see my eyes. xoxoxox This is me just here to brag and say i can spy and tell you i love you.. dont roll your eyes\n Love Miki");
 });
